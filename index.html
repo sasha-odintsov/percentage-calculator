@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор процентов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -17,26 +21,35 @@
                 Калькулятор процентов это онлайн сервис для расчета процентов 
             </h2>
         </div>
-        <form class="main-form">
-            <fieldset class="fieldset-primary">
-                Сколько составляет                    
-                <input type="number" id="calc-primary_x">                    
-                % от числа
-                <input type="number" id="calc-primary_y">
-                <button type="button" onclick="calcNumbr()">Ок</button>
-                <button onclick="reset()" class="reset">Сброс</button>                
-                <div id="result-primary">0% от числа 0 = 0</div>
-            </fieldset>
-            <fieldset class="fieldset-secondary">
-                Сколько % составляет число                    
-                <input type="number" id="calc-secondary_x">                    
-                от числа
-                <input type="number" id="calc-secondary_y">
-                <button type="button" onclick="calcPercnt()">Ок</button>
-                <button onclick="reset()" class="reset">Сброс</button>                    
-                <div id="result-secondary">Число 0 от числа 0 = 0%</div>
-            </fieldset>
-        </form>          
+        <div class="main">
+            <form class="form-primary">
+                <fieldset class="fieldset-primary-values">
+                    Сколько составляет                    
+                    <input type="number" id="calc-primary_x">                    
+                    % от числа
+                    <input type="number" id="calc-primary_y">
+                    <div id="result-primary">0% от числа 0 = 0</div>
+                </fieldset>
+                <fieldset class="fieldset-primary-buttons">
+                    <button type="button" onclick="calcNumbr()">Ок</button>
+                    <button onclick="reset()" class="reset">Сброс</button>              
+
+                </fieldset>
+            </form>      
+            <form class="form-secondary">
+                <fieldset class="fieldset-secondary-values">
+                    Сколько % составляет число                    
+                    <input type="number" id="calc-secondary_x">                    
+                    от числа
+                    <input type="number" id="calc-secondary_y">
+                    <div id="result-secondary">Число 0 от числа 0 = 0%</div>
+                </fieldset>
+                <fieldset class="fieldset-secondary-buttons">
+                    <button type="button" onclick="calcPercnt()">Ок</button>
+                    <button onclick="reset()" class="reset">Сброс</button>                 
+                </fieldset>
+            </form> 
+        </div>
     </div>    
 </body>
 </html>

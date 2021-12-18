@@ -1,0 +1,66 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: 1rem; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 40px 0 20px 0;
+}
+
+.header__main-title,
+.header__description {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #3f3e3e;  
+    margin: 0;  
+    padding: 20px;
+}
+
+.header__description {
+    font-size: 1.4rem;    
+    font-weight: normal;   
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.form-primary,
+.form-secondary {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fieldset-primary-values,
+.fieldset-primary-buttons,
+.fieldset-secondary-values,
+.fieldset-secondary-buttons {
+    border: none;
+    padding: 30px 30px;
+}
+
+#calc-primary_x,
+#calc-primary_y,
+#calc-secondary_x,
+#calc-secondary_y {
+    width: 100px;
+    padding: 5px;
+}
