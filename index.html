@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percentage Calculator</title>
+    <title>Калькулятор процентов</title>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="header">
             <h1 class="header__main-title">
-                Percentage Calculator
+                Калькулятор процентов
             </h1>
             <h2 class="header__description">
-                Percentage Calculator is online tool to calculate percentages
+                Калькулятор процентов это онлайн сервис для расчета процентов 
             </h2>
         </div>
-        <div class="main">
-            <form class="main__primary-wrap">
-                <fieldset class="fieldset-primary">                    
-                    What is                    
-                    <input type="text">                    
-                    % of
-                    <input type="text"> 
-                    <input type="button" value="Calculate">                 
-                    <input type="button" value="Clear"> 
-                    <div class="result"></div>               
-                </fieldset>
-            </form>
-            <!-- <form class="main__secondary-wrap">
-
-            </form>
-            <form class="main__third-wrap">
-
-            </form>
-            <form class="main__fourth-wrap">
-
-            </form> -->
-        </div>
-    </div>
+        <form class="main-form">
+            <fieldset class="fieldset-primary">
+                Сколько составляет                    
+                <input type="number" id="calc-primary_x">                    
+                % от числа
+                <input type="number" id="calc-primary_y">
+                <button type="button" onclick="calcNumbr()">Ок</button>
+                <button onclick="reset()" class="reset">Сброс</button>                
+                <div id="result-primary">0% от числа 0 = 0</div>
+            </fieldset>
+            <fieldset class="fieldset-secondary">
+                Сколько % составляет число                    
+                <input type="number" id="calc-secondary_x">                    
+                от числа
+                <input type="number" id="calc-secondary_y">
+                <button type="button" onclick="calcPercnt()">Ок</button>
+                <button onclick="reset()" class="reset">Сброс</button>                    
+                <div id="result-secondary">Число 0 от числа 0 = 0%</div>
+            </fieldset>
+        </form>          
+    </div>    
 </body>
 </html>
