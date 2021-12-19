@@ -17,6 +17,8 @@ body {
     margin: 0 auto;
 }
 
+/* header */
+
 .header {
     margin: 40px 0 20px 0;
 }
@@ -25,7 +27,7 @@ body {
 .header__description {
     font-size: 1.8rem;
     text-align: center;
-    color: #3f3e3e;  
+    color: #474747;  
     margin: 0;  
     padding: 20px;
 }
@@ -34,6 +36,8 @@ body {
     font-size: 1.4rem;    
     font-weight: normal;   
 }
+
+/* main */
 
 .main {
     margin-top: 20px;
@@ -44,7 +48,8 @@ body {
     margin: 0 auto;
     width: 70%;
     margin-bottom: 20px;
-    border: 1px solid grey;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -57,6 +62,13 @@ body {
     padding: 30px 30px;
 }
 
+.fieldset-primary-buttons, 
+.fieldset-secondary-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 #calc-primary_x,
 #calc-primary_y,
 #calc-secondary_x,
@@ -64,3 +76,40 @@ body {
     width: 100px;
     padding: 5px;
 }
+
+#result-primary, 
+#result-secondary {
+    border-top: 1px solid #a7a7a7;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+.button, .reset {
+    font-size: 1.2rem;
+    border: 1px solid #a7a7a7;
+    cursor: pointer;
+    background-color: #4f814f;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.button {
+    margin-right: 5px;
+}
+
+.button:hover, .reset:hover {
+    background-color: #6dcf6d;
+}
+
+.button:active, .reset:active {
+    transform: scale(0.9);
+}
+
+.button {
+    padding: 10px;
+}
+
+.reset {
+    padding: 10px 5px;
+}
+
