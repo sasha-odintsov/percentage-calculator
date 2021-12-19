@@ -6,6 +6,7 @@ body {
     font-family: 'Roboto',
     sans-serif;
     font-size: 1rem; 
+    /* background-color: #fafafa; */
 }
 
 * {
@@ -15,6 +16,7 @@ body {
 .wrapper {
     width: 80%;
     margin: 0 auto;
+    color: #575757;
 }
 
 /* header */
@@ -25,7 +27,7 @@ body {
 
 .header__main-title,
 .header__description {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     color: #474747;  
     margin: 0;  
@@ -33,7 +35,7 @@ body {
 }
 
 .header__description {
-    font-size: 1.4rem;    
+    font-size: 1.1rem;    
     font-weight: normal;   
 }
 
@@ -48,10 +50,12 @@ body {
     margin: 0 auto;
     width: 70%;
     margin-bottom: 20px;
-    border: 1px solid #a7a7a7;
+    /* border: 1px solid #a7a7a7; */
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px #a7a7a7;
 }
 
 .fieldset-primary-values,
@@ -59,22 +63,23 @@ body {
 .fieldset-secondary-values,
 .fieldset-secondary-buttons {
     border: none;
-    padding: 30px 30px;
+    padding: 30px;
 }
 
 .fieldset-primary-buttons, 
 .fieldset-secondary-buttons {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 #calc-primary_x,
 #calc-primary_y,
 #calc-secondary_x,
 #calc-secondary_y {
-    width: 100px;
+    width: 80px;
     padding: 5px;
+    border: 1px solid #a7a7a7;
 }
 
 #result-primary, 
@@ -88,7 +93,7 @@ body {
     font-size: 1.2rem;
     border: 1px solid #a7a7a7;
     cursor: pointer;
-    background-color: #4f814f;
+    background-color: #00a870;
     color: #fff;
     margin-bottom: 5px;
 }
@@ -98,7 +103,7 @@ body {
 }
 
 .button:hover, .reset:hover {
-    background-color: #6dcf6d;
+    background-color: #02e297;
 }
 
 .button:active, .reset:active {
