@@ -15,19 +15,25 @@ function getNumbr() {
     }
 };
 
-function calcNumbr(a, b) { 
-    return (b / 100) * a;
-};
+// function calcNumbr(a, b) {
+//     return (b / 100) * a;
+// };
 
-function showResultNumbr(a, b, c) {     
-    return `
-        ${a}% от числа ${b} = ${c}
-    `;
-};
+const calcNumbr = (a, b) => (b / 100) * a;
 
-function showError() { 
-    return `Заполните все поля!`;
-};
+// function showResultNumbr(a, b, c) {
+//     return `
+//         ${a}% от числа ${b} = ${c}
+//     `;
+// };
+
+const showResultNumbr = (a, b, c) => `${a}% от числа ${b} = ${c}`; 
+
+// function showError() {
+//     return `Заполните все поля!`;
+// };
+
+const showError = () => `Заполните все поля!`
 
 function getPercnt() { 
     let x = document.getElementById('calc-secondary_x').value;
@@ -46,16 +52,22 @@ function getPercnt() {
     }    
 };
 
-function calcPercnt(a, b) { 
-    return (a * 100) / b;
-};
+// function calcPercnt(a, b) {
+//     return (a * 100) / b;
+// };
 
-function showResultPercnt(a, b, c) {     
-    return `
-        Число ${a} от числа ${b} = ${c}%
-    `;
-};
+const calcPercnt = (a, b) => (a * 100) / b;
 
-function reset() { 
-    document.getElementsByClassName('reset').value = '';
-};
+// function showResultPercnt(a, b, c) {
+//     return `
+//         Число ${a} от числа ${b} = ${c}%
+//     `;
+// };
+
+const showResultPercnt = (a, b, c) => `Число ${a} от числа ${b} = ${c}%`;
+
+// function reset() {
+//     document.getElementsByClassName('reset').value = '';
+// };
+
+const reset = () => document.getElementsByClassName('reset').value = '';
