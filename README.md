@@ -1,2 +1,2 @@
 # percentage-calculator
-https://percentage-cacl.netlify.app
+https://percentage-calculate.netlify.app
