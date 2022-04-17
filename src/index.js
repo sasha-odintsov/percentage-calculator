@@ -7,7 +7,7 @@ import calcPercnt from './lib/calcPercnt';
 import showResultPercnt from './lib/showResultPercnt';
 import reset from './lib/reset';
 
-(function () {
+(() => {
   function getNumbr() {
     const x = document.getElementById('calc-primary_x').value;
     const y = document.getElementById('calc-primary_y').value;
@@ -42,4 +42,4 @@ import reset from './lib/reset';
   document.querySelector('.fieldset-secondary-buttons .button').addEventListener('click', () => { getPercnt(); });
 
   document.querySelector('.reset').addEventListener('click', () => { reset(); });
-}());
+})();
