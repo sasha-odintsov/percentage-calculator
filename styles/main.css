@@ -49,8 +49,8 @@ body {
 .form-secondary {
     margin: 0 auto;
     width: 70%;
+    max-width: 720px;
     margin-bottom: 20px;
-    /* border: 1px solid #a7a7a7; */
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -157,5 +157,10 @@ input[type="number"]::-webkit-inner-spin-button {
     .form-primary,
     .form-secondary {
         width: 100%;
+    }
+
+    .fieldset-primary-buttons, 
+    .fieldset-secondary-buttons {
+        display: block;
     }
 }
