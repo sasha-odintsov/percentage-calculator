@@ -146,3 +146,25 @@ input[type="number"]::-webkit-inner-spin-button {
         display: block;
     }
 }
+
+@media screen and (max-width:399px) {
+    .form-primary,
+    .form-secondary {
+        display: block;
+    }
+
+    .fieldset-primary-values, 
+    .fieldset-secondary-values {
+        padding-bottom: 15px;
+    }
+
+    .fieldset-primary-buttons, 
+    .fieldset-secondary-buttons {
+        padding-top: 0;
+    }
+
+    .button, .reset {
+        display: inline-block;
+        width: 45%;
+    }
+}
