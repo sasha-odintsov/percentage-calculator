@@ -6,7 +6,6 @@ body {
     font-family: 'Roboto',
     sans-serif;
     font-size: 1rem; 
-    /* background-color: #fafafa; */
 }
 
 * {
@@ -28,10 +27,10 @@ body {
 .header__main-title,
 .header__description {
     font-size: 1.6rem;
-    text-align: center;
-    color: #474747;  
+    text-align: center; 
     margin: 0;  
     padding: 10px;
+    text-shadow: 0 1px 2px rgba(70, 70, 70, 0.3);
 }
 
 .header__description {
@@ -48,13 +47,12 @@ body {
 .form-primary,
 .form-secondary {
     margin: 0 auto;
-    width: 70%;
-    max-width: 720px;
+    max-width: 770px;
     margin-bottom: 20px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #fcfcfc;
     box-shadow: 0px 1px 5px #a7a7a7;
 }
 
@@ -101,12 +99,18 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .button, .reset {
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    background-color: #00a870;
-    color: #fff;
     margin: 5px;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #707070;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(117, 117, 117, 0.4),
+    inset 0 2px 0 rgba(255, 255, 255, .7),
+    0 2px 0 rgba(0, 0, 0, .1),
+    inset 0 0 20px rgba(68, 68, 68, 0.1);
 }
 
 .button {
@@ -114,35 +118,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .button:hover, .reset:hover {
-    background-color: #02e297;
+    color: #a7a7a7;
 }
 
 .button:active, .reset:active {
-    transform: scale(0.9);
-}
-
-.button {
-    padding: 10px;
-}
-
-.reset {
-    padding: 10px 5px;
-}
-
-@media screen and (max-width:1024px) {
-    .wrapper {
-        width: 85%;
-    }
-
-    .form-primary,
-    .form-secondary {
-        width: 90%;
-    }
-
-    .fieldset-primary-buttons, 
-    .fieldset-secondary-buttons {
-        flex-wrap: wrap;
-    }
+    box-shadow: inset 0 0 20px rgba(73, 73, 73, 0.2),
+    0 2px 0 rgba(255, 255, 255, .4),
+    inset 0 2px 0 rgba(0, 0, 0, .1);
 }
 
 @media screen and (max-width:769px) {
@@ -154,13 +136,13 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 5px 0 20px 0;
     }
 
-    .form-primary,
-    .form-secondary {
-        width: 100%;
-    }
-
     .fieldset-primary-buttons, 
     .fieldset-secondary-buttons {
+        text-align: end;
+        display: block;
+    }
+    
+    .button, .reset {
         display: block;
     }
 }
