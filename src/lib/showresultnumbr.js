@@ -1,3 +1,3 @@
-const showResultNumbr = (a, b, c) => `${a}% от числа ${b} = ${c}`;
+const showResultNumbr = (a, b, c) => `${a}% от числа ${b} = <strong>${c}</strong>`;
 
 export default showResultNumbr;

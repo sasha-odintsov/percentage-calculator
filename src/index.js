@@ -16,7 +16,7 @@ import resetPercnt from './lib/resetPercnt';
 
     if (!x.length || !y.length) {
       result.innerHTML = showError();
-      result.style.color = 'red';
+      result.style.color = '#ee6060';
     } else {
       result.innerHTML = showResultNumbr(x, y, calcNumbr(x, y));
       result.style.color = '#575757';
@@ -32,7 +32,7 @@ import resetPercnt from './lib/resetPercnt';
 
     if (!x.length || !y.length) {
       result.innerHTML = showError();
-      result.style.color = 'red';
+      result.style.color = '#ee6060';
     } else {
       result.innerHTML = showResultPercnt(x, y, calcPercnt(x, y));
       result.style.color = '#575757';
